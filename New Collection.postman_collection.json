@@ -1,0 +1,248 @@
+{
+  "info": {
+    "_postman_id": "5e165757-ee67-4ea0-87fc-91cb44749505",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30035480",
+    "_collection_link": "https://go.postman.co/collection/30035480-5e165757-ee67-4ea0-87fc-91cb44749505?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Download",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8649b3cef2748ed9d66484e27fdb94a"
+          }
+        ],
+        "url": {
+          "raw": "https://reqres.in/api/users?page=2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "2"
+            }
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://reqres.in/api/users?page=2' \\\r\n--header 'x-api-key: API_KEY_KAMU'"
+      },
+      "response": []
+    },
+    {
+      "name": "Donwload Sebagian by ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8649b3cef2748ed9d66484e27fdb94a"
+          }
+        ],
+        "url": {
+          "raw": "https://reqres.in/api/users/2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request GET 'https://reqres.in/api/users/2' \\\r\n--header 'x-api-key: reqres_d8649b3cef2748ed9d66484e27fdb94a'"
+      },
+      "response": []
+    },
+    {
+      "name": "Create data",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8649b3cef2748ed9d66484e27fdb94a"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Alif\",\r\n    \"job\": \"QA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/users",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://reqres.in/api/users' \\\r\n--header 'x-api-key: reqres_d8649b3cef2748ed9d66484e27fdb94a' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"name\": \"Muhammad Alif\",\r\n    \"job\": \"QA Engineer\"\r\n}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Update full",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8649b3cef2748ed9d66484e27fdb94a"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Muhammad Alif Farhan\",\r\n    \"job\": \"QA ABC\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/users/2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request PUT 'https://reqres.in/api/users/2' \\\r\n--header 'x-api-key: reqres_d8649b3cef2748ed9d66484e27fdb94a' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"name\": \"Muhammad Alif Updated\",\r\n    \"job\": \"Senior QA Engineer\"\r\n}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Update sebagian payload",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8649b3cef2748ed9d66484e27fdb94a"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"job\": \"QA ABCDEF\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/users/2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request PATCH 'https://reqres.in/api/users/2' \\\r\n--header 'x-api-key: reqres_d8649b3cef2748ed9d66484e27fdb94a' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"job\": \"Lead QA\"\r\n}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Hapus data",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8649b3cef2748ed9d66484e27fdb94a"
+          }
+        ],
+        "url": {
+          "raw": "https://reqres.in/api/users/2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request DELETE 'https://reqres.in/api/users/2' \\\r\n--header 'x-api-key: reqres_d8649b3cef2748ed9d66484e27fdb94a'"
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid key",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "invalid_key_123"
+          }
+        ],
+        "url": {
+          "raw": "https://reqres.in/api/users?page=2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "2"
+            }
+          ]
+        },
+        "description": "Generated from cURL: curl --location --request GET 'https://reqres.in/api/users?page=2' \\\r\n--header 'x-api-key: invalid_key_123'"
+      },
+      "response": []
+    }
+  ]
+}
